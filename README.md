@@ -15,4 +15,5 @@ This monorepo contains the following packages:
  **Install dependencies** (using [pnpm](https://pnpm.io/)):
    ```bash
    pnpm install
-![Image](https://github.com/user-attachments/assets/d643ca48-9d08-4fbb-bd6e-9c14fadce653)
+IMAGE
+https://github.com/user-attachments/assets/d643ca48-9d08-4fbb-bd6e-9c14fadce653
