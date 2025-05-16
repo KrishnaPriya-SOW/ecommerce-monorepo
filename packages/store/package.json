@@ -1,0 +1,26 @@
+{
+  "name": "@ecommerce/store",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "dev": "pnpm build --watch"
+  },
+  "dependencies": {
+    "zustand": "^4.5.7",
+    "@ecommerce/types": "workspace:*"
+
+  },
+  "peerDependencies": {
+    "@ecommerce/api-client": "workspace:*",
+    "@ecommerce/types": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.3",
+    "@types/zustand": "^4.3.8"
+
+  }
+}
