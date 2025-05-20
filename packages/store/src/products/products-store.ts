@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 import { getProducts } from '@ecommerce/api-client'
-import type { Product } from '../../types'
+import type { Product } from '@ecommerce/types'  // Changed from '../../types'
 
 type ProductState = {
   products: Product[]
@@ -11,7 +11,7 @@ type ProductState = {
   getProductById: (id: string) => Product | undefined
 }
 
-export const useProductStore = create<ProductState>((set: (arg0: { loading: boolean; error?: string | null; products?: any; featuredProducts?: any }) => void, get: () => { (): any; new(): any; products: any[] }) => ({
+export const useProductStore = create<ProductState>((set, get) => ({
   products: [],
   featuredProducts: [],
   loading: false,

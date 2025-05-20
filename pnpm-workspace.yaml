@@ -1,4 +1,5 @@
-
 packages:
-  - "apps/*"
-  - "packages/*"
+  - apps/*
+  - packages/*
+overrides:
+  api-client: link:../AppData/Local/pnpm/global/5/node_modules/@ecommerce/api-client

@@ -10,8 +10,7 @@
     "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.0.0",
+    "class-variance-authority": "^0.7.1",
     "tailwind-merge": "^2.0.0"
   },
   "peerDependencies": {
@@ -20,10 +19,16 @@
     "tailwindcss": "^3.0.0"
   },
   "devDependencies": {
-    "@testing-library/react": "^14.0.0",
+    "@swc/core": "^1.11.24",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^14.3.1",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
     "@types/react": "^18.0.0",
+    "clsx": "^2.1.1",
+    "jsdom": "^26.1.0",
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
-    "vitest": "^1.0.0"
+    "vitest": "^1.6.1"
   }
 }

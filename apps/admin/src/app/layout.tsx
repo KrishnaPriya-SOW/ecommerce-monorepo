@@ -1,14 +1,5 @@
 import './globals.css' 
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import { ReactNode } from 'react'
-
-const inter = Inter({ subsets: ['latin'] })
-
-export const metadata: Metadata = {
-  title: 'Admin Dashboard',
-  description: 'E-commerce administration panel',
-}
 
 type RootLayoutProps = {
   children: ReactNode
@@ -17,7 +8,7 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gray-100`}>
+      <body >
         <div className="min-h-screen flex">
           <aside className="w-64 bg-white shadow">
             <nav className="p-4">

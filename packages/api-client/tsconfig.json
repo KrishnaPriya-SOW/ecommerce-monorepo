@@ -3,11 +3,11 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "composite": true
+    "declaration": true,
+    "declarationMap": true,
+    "composite": true,          
+    "skipLibCheck": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"],
-  "references": [
-    { "path": "../types" }
-  ]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
